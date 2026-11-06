@@ -7,6 +7,21 @@
     window.gtag('event', name, params);
   }
 
+  /* 제품 상세 조회 */
+  if (document.body.classList.contains('pdp-page')) {
+    track('view_item', {
+      currency: 'KRW',
+      value: 140000,
+      items: [{
+        item_id: 'MUE-COL01',
+        item_name: 'MUE Collection 01 Bouquet Object',
+        item_category: 'Bouquet Object',
+        price: 140000,
+        quantity: 1
+      }]
+    });
+  }
+
   /* 헤더 그림자 */
   var hd = document.querySelector('.hd');
   if (hd) {
@@ -53,7 +68,11 @@
   /* CTA 클릭 측정: data-cta="위치" 가 붙은 링크·버튼 */
   document.querySelectorAll('[data-cta]').forEach(function (el) {
     el.addEventListener('click', function () {
-      track('cta_click', { cta_location: el.getAttribute('data-cta'), cta_text: el.textContent.trim().slice(0, 40) });
+      track('cta_click', {
+        cta_location: el.getAttribute('data-cta'),
+        button_text: el.textContent.trim().slice(0, 40),
+        link_url: el.href || ''
+      });
     });
   });
 
@@ -94,7 +113,12 @@
 
   function finish(form) {
     var src = form.getAttribute('data-form') || 'unknown';
-    track('generate_lead', { form_location: src, currency: 'KRW', value: 0 });
+    track('generate_lead', {
+      lead_type: 'launch_alert',
+      form_location: src,
+      currency: 'KRW',
+      value: 0
+    });
     if (window.fbq) window.fbq('track', 'Lead');
     form.querySelectorAll('input, select, textarea').forEach(function (el) {
       if (el.type === 'checkbox' || el.type === 'radio') el.checked = false; else el.value = '';
@@ -105,7 +129,13 @@
   document.querySelectorAll('form[data-form]').forEach(function (form) {
     var started = false;
     form.addEventListener('input', function () {
-      if (!started) { started = true; track('form_start', { form_location: form.getAttribute('data-form') }); }
+      if (!started) {
+        started = true;
+        track('form_start', {
+          form_location: form.getAttribute('data-form'),
+          form_type: 'launch_alert'
+        });
+      }
     });
     form.addEventListener('submit', function (e) {
       e.preventDefault();
