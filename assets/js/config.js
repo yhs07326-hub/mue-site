@@ -25,6 +25,11 @@ window.MUE_CONFIG = {
     s.src = 'https://www.googletagmanager.com/gtag/js?id=' + c.GA4_ID;
     document.head.appendChild(s);
     window.gtag('js', new Date());
-    window.gtag('config', c.GA4_ID, { debug_mode: true });
+    window.gtag('config', c.GA4_ID, { debug_mode: true, send_page_view: false });
+    window.gtag('event', 'page_view', {
+      debug_mode: true,
+      page_location: window.location.href,
+      page_title: document.title
+    });
   }
 })();
