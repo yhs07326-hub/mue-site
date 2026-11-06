@@ -1,7 +1,10 @@
 /* MUE 공용 스크립트: 헤더, 메뉴, 등장 효과, 스와이프 갤러리, 이벤트 측정, 신청 폼 */
 (function () {
   function track(name, params) {
-    if (window.gtag) window.gtag('event', name, params || {});
+    if (!window.gtag) return;
+    params = params || {};
+    params.debug_mode = true;
+    window.gtag('event', name, params);
   }
 
   /* 헤더 그림자 */
