@@ -10,14 +10,15 @@
 <meta property="og:image" content="assets/img/held-scale.jpg">
 <link rel="icon" href="assets/img/logo-ink.png">
 <script src="assets/js/config.js?v=20261106-1436"></script>
+<script src="ga4-easy.js?v=20261106-1455" data-id="G-2F6LVCJFNC"></script>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="hd">
-  <nav class="l"><a href="product.html" data-cta="header_collection">COLLECTION</a></nav>
+  <nav class="l"><a href="product.html">COLLECTION</a></nav>
   <a class="wordmark" href="index.html" aria-label="MUE 홈"><img src="assets/img/logo-ink.png" alt="MUE"></a>
-  <nav class="r"><a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-cta="header_instagram">INSTAGRAM</a></nav>
+  <nav class="r"><a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-ga="contact_click" data-ga-contact-method="instagram">INSTAGRAM</a></nav>
 </header>
 
 <main>
@@ -30,7 +31,7 @@
     <p class="sub">출시일과 선공개 구매 혜택을 가장 먼저 알려드릴게요.</p>
 
     <div class="box">
-      <form data-form="waitlist_page" novalidate>
+      <form data-form="waitlist_page" data-ga="off" novalidate>
         <input class="input" type="tel" inputmode="numeric" autocomplete="off" placeholder="휴대폰 번호를 입력해주세요." aria-label="휴대폰 번호" data-phone data-required data-label="휴대폰 번호">
         <div class="opt">
           <span>MUE를 어디에 두고 싶으세요? (선택)</span>
@@ -86,7 +87,7 @@
   </div>
 </div>
 
-<script src="assets/js/main.js?v=20261106-1436"></script>
+<script src="assets/js/main.js?v=20261106-1455"></script>
 <script>
 /* 라디오 묶음(name 속성 없이 하나만 선택) */
 document.querySelectorAll('[data-group="place"]').forEach(function (r, _, all) {
