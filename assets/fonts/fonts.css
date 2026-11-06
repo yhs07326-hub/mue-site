@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("./web/InstrumentSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("./web/InstrumentSans-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("./web/InstrumentSerif-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("./web/Pretendard-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("./web/Pretendard-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("./web/Pretendard-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --font-en-sans: "Instrument Sans", sans-serif;
+  --font-en-serif: "Instrument Serif", serif;
+  --font-ko: "Pretendard", sans-serif;
+}
+
+/* Recommended role mapping */
+.heading-en {
+  font-family: var(--font-en-sans);
+  font-weight: 600;
+}
+
+.heading-ko {
+  font-family: var(--font-ko);
+  font-weight: 700;
+}
+
+.body-en {
+  font-family: var(--font-en-sans);
+  font-weight: 400;
+}
+
+.body-ko {
+  font-family: var(--font-ko);
+  font-weight: 400;
+}
+
+.accent-en {
+  font-family: var(--font-en-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.accent-ko {
+  font-family: var(--font-ko);
+  font-weight: 600;
+}
