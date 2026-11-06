@@ -10,6 +10,7 @@
 <meta property="og:image" content="assets/img/held-scale.jpg">
 <link rel="icon" href="assets/img/logo-ink.png">
 <script src="assets/js/config.js?v=20261106-1436"></script>
+<script src="ga4-easy.js?v=20261106-1455" data-id="G-2F6LVCJFNC"></script>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,13 +20,13 @@
   <header class="hd">
     <nav class="l"><a href="product.html">COLLECTION</a></nav>
     <a class="wordmark" href="index.html" aria-label="MUE 홈"><img src="assets/img/logo-ink.png" alt="MUE"></a>
-    <nav class="r"><button type="button" class="menu-btn" aria-expanded="false" aria-controls="drawer">MENU</button></nav>
+    <nav class="r"><button type="button" class="menu-btn" aria-expanded="false" aria-controls="drawer" data-ga="off">MENU</button></nav>
   </header>
   <nav class="drawer" id="drawer">
     <a href="index.html">Home</a>
     <a href="product.html">Collection 01</a>
-    <a href="waitlist.html" data-cta="menu_waitlist">Waitlist</a>
-    <a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-cta="menu_instagram">Instagram</a>
+    <a href="waitlist.html">Waitlist</a>
+    <a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-ga="contact_click" data-ga-contact-method="instagram">Instagram</a>
   </nav>
 
   <!-- IMAGE / Hero -->
@@ -130,7 +131,7 @@
     <p class="rt">2026. 12<br>COMING SOON</p>
     <p class="price">예정 가격 140,000원</p>
     <p class="wl">Collection 01 · BOUQUET<br>출시 소식을 가장 먼저 확인해보세요.</p>
-    <form data-form="pdp_release" novalidate style="display:flex;flex-direction:column;gap:20px">
+    <form data-form="pdp_release" data-ga="off" novalidate style="display:flex;flex-direction:column;gap:20px">
       <input class="input" type="tel" inputmode="numeric" autocomplete="off" placeholder="휴대폰 번호를 입력해 주세요." aria-label="휴대폰 번호" data-phone data-required data-label="휴대폰 번호">
       <button class="btn block" type="submit" data-cta="pdp_release_submit">입력 완료</button>
       <p class="err" role="alert" style="margin-top:-12px"></p>
@@ -140,7 +141,7 @@
 
   <footer class="pfoot">
     <img src="assets/img/logo-white.png" alt="MUE">
-    <nav><a href="index.html">HOME</a><a href="waitlist.html">WAITLIST</a><a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-cta="footer_instagram">INSTAGRAM</a></nav>
+    <nav><a href="index.html">HOME</a><a href="waitlist.html">WAITLIST</a><a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-ga="contact_click" data-ga-contact-method="instagram">INSTAGRAM</a></nav>
     <p>출시 전 사전 안내 페이지입니다. 입력하신 정보는 저장되지 않으며, 표기된 일정·가격은 바뀔 수 있습니다. · <a href="#" data-privacy-open>개인정보 처리 안내</a></p>
   </footer>
 </div>
@@ -162,6 +163,6 @@
   </div>
 </div>
 
-<script src="assets/js/main.js?v=20261106-1436"></script>
+<script src="assets/js/main.js?v=20261106-1455"></script>
 </body>
 </html>
