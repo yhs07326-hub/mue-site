@@ -119,7 +119,6 @@
       currency: 'KRW',
       value: 0
     });
-    if (window.fbq) window.fbq('track', 'Lead');
     form.querySelectorAll('input, select, textarea').forEach(function (el) {
       if (el.type === 'checkbox' || el.type === 'radio') el.checked = false; else el.value = '';
     });
