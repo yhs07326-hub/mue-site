@@ -1,9 +1,8 @@
 /* MUE 측정 설정 — ID는 이 파일 한 곳에서만 바꿉니다.
-   지금 값은 정시은 학생이 기존 사이트(siena-site)에 쓰던 ID입니다.
-   MUE용 GA4 속성을 새로 만들었다면 GA4_ID만 바꾸면 됩니다.
+   GA4 디버그 모드는 수업 중 DebugView 확인을 위해 켜 둡니다.
    Meta 픽셀은 GTM 안에서만 켭니다. 이 사이트 HTML에는 픽셀 코드를 직접 넣지 않습니다(중복 방지). */
 window.MUE_CONFIG = {
-  GA4_ID: 'G-464JXZ7MDB',
+  GA4_ID: 'G-2F6LVCJFNC',
   GTM_ID: 'GTM-TR98M9NL'
 };
 
@@ -26,6 +25,6 @@ window.MUE_CONFIG = {
     s.src = 'https://www.googletagmanager.com/gtag/js?id=' + c.GA4_ID;
     document.head.appendChild(s);
     window.gtag('js', new Date());
-    window.gtag('config', c.GA4_ID);
+    window.gtag('config', c.GA4_ID, { debug_mode: true });
   }
 })();
