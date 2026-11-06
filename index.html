@@ -11,14 +11,15 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/img/logo-ink.png">
 <script src="assets/js/config.js?v=20261106-1436"></script>
+<script src="ga4-easy.js?v=20261106-1455" data-id="G-2F6LVCJFNC"></script>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="hd">
-  <nav class="l"><a href="product.html" data-cta="header_collection">COLLECTION</a></nav>
+  <nav class="l"><a href="product.html">COLLECTION</a></nav>
   <a class="wordmark" href="index.html" aria-label="MUE 홈"><img src="assets/img/logo-ink.png" alt="MUE"></a>
-  <nav class="r"><a class="hide-m" href="waitlist.html" data-cta="header_waitlist">WAITLIST</a><a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-cta="header_instagram">INSTAGRAM</a></nav>
+  <nav class="r"><a class="hide-m" href="waitlist.html">WAITLIST</a><a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-ga="contact_click" data-ga-contact-method="instagram">INSTAGRAM</a></nav>
 </header>
 
 <main>
@@ -46,8 +47,8 @@
         <p class="name" id="sl-name">BOUQUET OBJECT</p>
       </div>
       <div class="arrows">
-        <button type="button" id="sl-prev" aria-label="이전 이미지">←</button>
-        <button type="button" id="sl-next" aria-label="다음 이미지">→</button>
+        <button type="button" id="sl-prev" aria-label="이전 이미지" data-ga="off">←</button>
+        <button type="button" id="sl-next" aria-label="다음 이미지" data-ga="off">→</button>
       </div>
     </div>
     <div class="slides" id="slides">
@@ -103,14 +104,14 @@
   <div class="row">
     <ul>
       <li>MUE</li>
-      <li><a href="mailto:hello@mue.kr" data-todo="email">Contact</a></li>
-      <li><a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-cta="footer_instagram">Instagram</a></li>
+      <li><a href="mailto:hello@mue.kr" data-todo="email" data-ga="contact_click" data-ga-contact-method="email">Contact</a></li>
+      <li><a href="https://www.instagram.com/mue.objects/" target="_blank" rel="noopener noreferrer" data-ga="contact_click" data-ga-contact-method="instagram">Instagram</a></li>
     </ul>
     <span class="vr" aria-hidden="true"></span>
     <p class="info">hello@mue.kr<br>Seoul, Korea</p>
     <div class="sub" id="apply">
       <p>Collection 01 출시 소식을 가장 먼저 받아보세요.</p>
-      <form data-form="home_footer" novalidate>
+      <form data-form="home_footer" data-ga="off" novalidate>
         <input class="input" type="tel" inputmode="numeric" autocomplete="off" placeholder="휴대폰 번호를 입력하세요." aria-label="휴대폰 번호" data-phone data-required data-label="휴대폰 번호">
         <button class="btn-wine" type="submit" data-cta="home_footer_submit">출시 예약</button>
       </form>
@@ -142,7 +143,7 @@
   </div>
 </div>
 
-<script src="assets/js/main.js?v=20261106-1436"></script>
+<script src="assets/js/main.js?v=20261106-1455"></script>
 <script>
 /* 01 / 05 넘김 */
 (function () {
@@ -156,7 +157,7 @@
     name.textContent = figs[i].getAttribute('data-name');
   }, { passive: true });
   document.getElementById('sl-prev').addEventListener('click', function () { go(idx() - 1); });
-  document.getElementById('sl-next').addEventListener('click', function () { go(idx() + 1); if (window.gtag) gtag('event', 'slider_next', { slide: idx() + 2 }); });
+  document.getElementById('sl-next').addEventListener('click', function () { go(idx() + 1); });
 })();
 </script>
 </body>
