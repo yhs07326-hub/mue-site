@@ -17,10 +17,15 @@ GitHub Pages용 정적 사이트입니다. 이 폴더 안의 내용을 리포 �
 - Instagram: `https://www.instagram.com/mue.objects/`
 
 ## 측정 이벤트
-- `generate_lead` (주요 이벤트로 표시): 개인정보 안내 확인까지 마친 신청 완료 시. `form_location` = `home_footer` / `waitlist_page` / `pdp_release`
-- `form_start`: 신청란에 입력을 시작했을 때
-- `cta_click`: 신청 버튼을 실제로 눌렀을 때. `cta_location` = `home_footer_submit` / `waitlist_submit` / `pdp_release_submit`
-- `slider_next`
+- 전체 설계표와 파라미터: `EVENT_MEASUREMENT_PLAN.md`
+- `generate_lead` (주요 이벤트): 개인정보 안내 확인까지 마친 신청 완료
+- `view_item`: Collection 01 제품 상세 조회
+- `cta_click`: 출시 예약·알림 등 주요 버튼 클릭
+- `nav_click`: 헤더·모바일 메뉴·푸터 메뉴 이동
+- `form_start`: 출시 알림 신청란 입력 시작
+- `contact_click`: 이메일·인스타그램 문의 링크 클릭
+- `faq_open`: FAQ 질문 펼치기
+- `scroll_depth`: 페이지 25·50·75·100% 스크롤
 - Meta: GTM이 픽셀을 불러온 경우 신청 완료 시 `Lead`
 
 ## 폼
