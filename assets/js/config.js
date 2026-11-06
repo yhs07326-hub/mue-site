@@ -3,7 +3,7 @@
    Meta 픽셀은 GTM 안에서만 켭니다. 이 사이트 HTML에는 픽셀 코드를 직접 넣지 않습니다(중복 방지). */
 window.MUE_CONFIG = {
   GA4_ID: 'G-2F6LVCJFNC',
-  GTM_ID: 'GTM-TR98M9NL'
+  GTM_ID: ''
 };
 
 (function () {
